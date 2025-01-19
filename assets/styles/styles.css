@@ -129,6 +129,8 @@ q:after {
 body {
   min-width: 375px;
   background-color: var(--stone-100);
+  margin-top: 123px;
+  margin-bottom: 100px;
 }
 .wrapper {
   width: 100%;
@@ -151,6 +153,14 @@ body {
   font-weight: 500;
   font-family: var(--font-young-serif);
 }
+.banner-rose{
+  background-color: var(--rose-50);
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  align-content: center;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -161,7 +171,10 @@ img {
 h2 {
   color: var(--brown-800);
 }
-h3 {
+span {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.2;
   margin: 0;
   font-family: var(--font-outfit);
   color: var(--rose-800);
@@ -178,6 +191,8 @@ li {
 
 ul {
   margin-left: 10px;
+  margin-bottom: 0;
+  padding-left: 20px;
 }
 li {
   padding-left: 20px;
@@ -199,6 +214,10 @@ ol li {
 ol li::marker {
   font-weight: 700;
 }
+
+li:last-child{
+  padding-bottom: 0;
+} 
 /* Tablas: */
 
 table {
@@ -236,18 +255,21 @@ hr {
 
 @media (min-width: 768px) {
   .img {
-    margin: 30px 30px 0 30px;
-    border-radius: 20px;
+    margin: 39px 40px 0 40px;
+    border-radius: 12px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
     overflow: hidden;
+    margin-bottom: 38px;
   }
-  body {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
+
   .wrapper {
     padding-top: 1px;
-    border-radius: 20px;
+    border-radius: 24px;
     padding-bottom: 20px;
-    max-width: 720px;
+    max-width: 736px;
+  }
+  .container {
+    padding: 0 10px;
   }
 }
